@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Challenge Screenshot](./screenshot.jpg)
+![Challenge Screenshot](./social-proof-screenshot.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Singatha/social-proof-section-master)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://singatha.github.io/social-proof-section-master/)
 
 ## My process
 
