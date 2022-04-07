@@ -1,0 +1,219 @@
+:root {
+    --ff: "Spartan";
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+    --fs-normal: 15px;
+    --fs-tiny: 12px;
+    --fs-small: 14px;
+    --fs-big: 16px;
+    --fs-large: 18px;
+    --fs-huge: 40px;
+
+
+    --very-dark-magenta:  hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, .container  {
+    height: 100%;
+}
+
+body {
+    background-image: url('./images/bg-pattern-top-mobile.svg'), url('./images/bg-pattern-bottom-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50px -50px, 0 1000px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 370px;
+    width: 100%;
+}
+
+h1 {
+    color: var(--very-dark-magenta);
+    font-family: var(--ff);
+    font-size: var(--fs-huge);
+    font-weight: var(--fw-900);
+    text-align: center;
+}
+
+.header-section p {
+    color: var(--dark-grayish-magenta);
+    font-family: var(--ff);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-400);
+    line-height: 1.5;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.rating {
+    background-color: var(--light-grayish-magenta);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px;
+    padding: 15px 0 10px;
+}
+
+.rating div {
+    margin: 0 auto;
+}
+
+.rating p {
+    color: var(--very-dark-magenta);
+    font-family: var(--ff);
+    font-size: var(--fs-tiny);
+    font-weight: var(--fw-900);
+    text-align: center;
+}
+
+.name {
+    color: var(--white);
+    font-family: var(--ff);
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-700);
+    margin: 15px 0 0;
+}
+
+.pink {
+    color: var(--soft-pink);
+    font-family: var(--ff);
+    font-size: var(--fs-normal);
+    margin: 5px 0 15px;
+}
+
+.white {
+    color: var(--white);
+    font-family: var(--ff);
+    font-size: var(--fs-tiny);
+    font-weight: var(--fw-700);
+    line-height: 2;
+    margin: 25px 0 15px;
+}
+
+.review {
+    background-color: var(--very-dark-magenta);
+    border-radius: 10px;
+    margin: 0 0 20px;
+    padding: 40px;
+}
+
+.review-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.review-profile div {
+    margin-left: 30px;
+}
+
+.review-profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (min-width: 1110px){
+    body {
+        align-items: center;
+        background-image: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');
+        background-position: 0 -350px, 650px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 200px 0 0;
+        max-width: 1120px;
+    }
+
+    .header-section {
+        width: 600px;
+    }
+
+    .side-by-side {
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 60px;
+    }
+
+    .rating {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 0 5px;
+        width: 420px;
+    }
+
+    .rating p {
+        margin-right: 60px;
+    }
+
+    .rating.first, .rating.second, .rating.third {
+        position: relative;
+    }
+
+    .rating.second {
+        left: 10%;
+    }
+
+    .rating.third {
+        left: 20%;
+    }
+
+    .reviews-section {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        justify-content: space-between;
+    }
+
+    h1, .header-section p {
+        text-align: unset;
+    }
+
+    h1 {
+        width: 60%;
+        margin: 0 0 30px;
+    }
+
+    .header-section p {
+        margin: 0;
+        width: 80%;
+    }
+
+    .review {
+        height: 260px;
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .review.first, .review.second, .review.third {
+        position: relative;
+    }
+
+    .review.second {
+        top: 5%;
+    }
+
+    .review.third {
+        top: 10%;
+    }
+
+}
