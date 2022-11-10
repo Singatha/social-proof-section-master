@@ -25,7 +25,7 @@
     box-sizing: border-box;
 }
 
-html, body, .container  {
+html, body, .social-proof  {
     height: 100%;
 }
 
@@ -36,13 +36,13 @@ body {
     background-position: 50px -50px, 0 1000px;
 }
 
-.container {
+.social-proof {
     margin: 0 auto;
     max-width: 370px;
     width: 100%;
 }
 
-h1 {
+.social-proof__title {
     color: var(--very-dark-magenta);
     font-family: var(--ff);
     font-size: var(--fs-huge);
@@ -50,7 +50,7 @@ h1 {
     text-align: center;
 }
 
-.header-section p {
+.social-proof__text {
     color: var(--dark-grayish-magenta);
     font-family: var(--ff);
     font-size: var(--fs-small);
@@ -60,7 +60,7 @@ h1 {
     text-align: center;
 }
 
-.rating {
+.social-proof__rating {
     background-color: var(--light-grayish-magenta);
     border-radius: 10px;
     display: flex;
@@ -69,11 +69,11 @@ h1 {
     padding: 15px 0 10px;
 }
 
-.rating div {
+.social-proof__rating__body {
     margin: 0 auto;
 }
 
-.rating p {
+.social-proof__rating__text {
     color: var(--very-dark-magenta);
     font-family: var(--ff);
     font-size: var(--fs-tiny);
@@ -81,7 +81,7 @@ h1 {
     text-align: center;
 }
 
-.name {
+.social-proof__review-profile__text {
     color: var(--white);
     font-family: var(--ff);
     font-size: var(--fs-normal);
@@ -89,14 +89,14 @@ h1 {
     margin: 15px 0 0;
 }
 
-.pink {
+.social-proof__review-profile__text--verified {
     color: var(--soft-pink);
     font-family: var(--ff);
     font-size: var(--fs-normal);
     margin: 5px 0 15px;
 }
 
-.white {
+.social-proof__review__text {
     color: var(--white);
     font-family: var(--ff);
     font-size: var(--fs-tiny);
@@ -105,24 +105,24 @@ h1 {
     margin: 25px 0 0;
 }
 
-.review {
+.social-proof__review {
     background-color: var(--very-dark-magenta);
     border-radius: 10px;
     margin: 0 0 20px;
     padding: 40px;
 }
 
-.review-profile {
+.social-proof__review-profile {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.review-profile div {
+.social-proof__review-profile__body {
     margin-left: 30px;
 }
 
-.review-profile img {
+.social-proof__review-profile__img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -137,83 +137,83 @@ h1 {
         justify-content: center;
     }
 
-    .container {
+    .social-proof {
         display: flex;
         flex-direction: column;
         height: 600px;
         max-width: 1120px;
     }
 
-    .header-section {
+    .social-proof__header {
         width: 600px;
     }
 
-    .side-by-side {
+    .social-proof__side-by-side {
         display: flex;
         flex-direction: row;
         margin: 0 0 60px;
     }
 
-    .rating {
+    .social-proof__rating {
         flex-direction: row;
         align-items: center;
         padding: 5px 0 5px;
         width: 420px;
     }
 
-    .rating p {
+    .social-proof__rating__text {
         margin-right: 60px;
     }
 
-    .rating.first, .rating.second, .rating.third {
+    .social-proof__rating--first, .social-proof__rating--second, .social-proof__rating--third {
         position: relative;
     }
 
-    .rating.second {
+    .social-proof__rating--second {
         left: 10%;
     }
 
-    .rating.third {
+    .social-proof__rating--third {
         left: 20%;
     }
 
-    .reviews-section {
+    .social-proof__reviews {
         display: flex;
         flex-direction: row;
         height: 600px;
         justify-content: space-between;
     }
 
-    h1, .header-section p {
+    .social-proof__title, .social-proof__text {
         text-align: unset;
     }
 
-    h1 {
+    .social-proof__title {
         width: 60%;
         margin: 0 0 30px;
     }
 
-    .header-section p {
+    .social-proof__text {
         margin: 0;
         width: 80%;
     }
 
-    .review {
+    .social-proof__review {
         height: 240px;
         margin: 0;
         max-width: 350px;
         padding: 20px;
     }
 
-    .review.first, .review.second, .review.third {
+    .social-proof__review--first, .social-proof__review--second, .social-proof__review--third {
         position: relative;
     }
 
-    .review.second {
+    .social-proof__review--second {
         top: 5%;
     }
 
-    .review.third {
+    .social-proof__review--third {
         top: 10%;
     }
 }
